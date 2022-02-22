@@ -4,7 +4,77 @@ __scrcpy()
 	COMPREPLY=()
 	cur="${COMP_WORDS[COMP_CWORD]}"
 	prev="${COMP_WORDS[COMP_CWORD - 1]}"
-	opts="--bit-rate -b --codec-options --crop --disable-screensaver --display --display-buffer --encoder --force-adb-forward --forward-all-clicks --fullscreen -f --help -h --hid-keyboard -K --hid-mouse -M --legacy-paste --lock-video-orientation). --lock-video-orientation[ --max-fps --max-size -m --no-clipboard-autosync --no-control -n --no-display -N --no-downsize-on-error --no-key-repeat --no-mipmaps --otg --port -p --power-off-on-close --prefer-text --push-target --raw-key-events --record -r --record-format --render-driver --rotation --serial -s --shortcut-mod --show-touches -t --stay-awake -w --tcpip --tunnel-host --tunnel-port --turn-screen-off -S --v4l2-buffer --v4l2-sink --verbosity -V --version -v --window-borderless --window-height --window-title --window-width --window-x --window-y --always-on-top"
+	opts="
+		--bit-rate
+		-b
+		--codec-options
+		--crop
+		--disable-screensaver
+		--display
+		--display-buffer
+		--encoder
+		--force-adb-forward
+		--forward-all-clicks
+		--fullscreen
+		-f
+		--help
+		-h
+		--hid-keyboard
+		-K
+		--hid-mouse
+		-M
+		--legacy-paste
+		--lock-video-orientation).
+		--lock-video-orientation[
+		--max-fps
+		--max-size
+		-m
+		--no-clipboard-autosync
+		--no-control
+		-n
+		--no-display
+		-N
+		--no-downsize-on-error
+		--no-key-repeat
+		--no-mipmaps
+		--otg
+		--port
+		-p
+		--power-off-on-close
+		--prefer-text
+		--push-target
+		--raw-key-events
+		--record
+		-r
+		--record-format
+		--render-driver
+		--rotation
+		--serial
+		-s
+		--shortcut-mod
+		--show-touches
+		-t
+		--stay-awake
+		-w
+		--tcpip
+		--tunnel-host
+		--tunnel-port
+		--turn-screen-off
+		-S
+		--v4l2-buffer
+		--v4l2-sink
+		--verbosity
+		-V
+		--version
+		-v
+		--window-borderless
+		--window-height
+		--window-title
+		--window-width
+		--window-x
+		--window-y
+		--always-on-top
+		"
 	keywords="$cur"
 	fileopts=$cur
 	diropts="$cur"
