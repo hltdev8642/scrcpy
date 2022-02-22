@@ -24,8 +24,7 @@ __scrcpy()
 		--hid-mouse
 		-M
 		--legacy-paste
-		--lock-video-orientation).
-		--lock-video-orientation[
+		--lock-video-orientation
 		--max-fps
 		--max-size
 		-m
